@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mecánica FrenosUriona: reparación, mantenimiento y venta de productos para camiones pesados."
+    />
+    <title>Mecánica FrenosUriona | Camiones pesados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SECCIÓN 1: CABECERA Y MENÚ -->
+    <header class="encabezado">
+      <div class="barra-superior">
+        MECÁNICA DE CAMIONES PESADOS <b>•</b> LUN — SÁB / 08:00 — 18:00
+      </div>
+      <nav class="navegacion ancho">
+        <a href="#inicio" class="marca"
+          ><span class="marca-simbolo"><i class="fa-solid fa-truck"></i></span
+          ><span class="marca-nombre"
+            >FrenosUriona<small>MECÁNICA PESADA</small></span
+          ></a
+        >
+        <button type="button" class="menu" aria-label="Abrir menú">☰</button>
+        <div class="enlaces">
+          <a href="#servicios">Servicios</a><a href="#productos">Venta</a
+          ><a href="#trabajadores">Trabajadores</a
+          ><a href="#ubicacion">Ubicación</a
+          ><a href="#contacto" class="cta-nav">Pedir cotización ↗</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+      <!-- SECCIÓN 2: HERO / INICIO -->
+      <section id="inicio" class="hero">
+        <div class="hero-fondo"></div>
+        <div class="hero-sombra"></div>
+        <div class="ancho hero-contenido">
+          <div class="hero-texto">
+            <p class="etiqueta clara"><i></i> SERVICIO PARA CAMIONES PESADOS</p>
+            <h1>Tu camión trabaja.<br /><em>Nosotros lo cuidamos.</em></h1>
+            <p class="intro">
+              Reparación de frenos, motor, caja, aire y mantenimiento para que
+              tu camión vuelva a la ruta con seguridad.
+            </p>
+            <div class="acciones">
+              <a class="boton principal" href="#servicios"
+                >Ver servicios <span>→</span></a
+              ><a
+                class="boton transparente"
+                href="https://wa.me/59175707099"
+                target="_blank"
+                rel="noopener"
+                >WhatsApp ↗</a
+              >
+            </div>
+          </div>
+          <div class="sello-hero">
+            <b>FU.</b><span>MECÁNICA<br />DE CONFIANZA</span>
+          </div>
+        </div>
+        <a class="bajar" href="#servicios">DESPLAZAR ↓</a>
+      </section>
+      <!-- SECCIÓN 3: INFORMACIÓN RÁPIDA -->
+      <section class="franja">
+        <div class="ancho franja-grid">
+          <p>
+            Trabajo especializado para
+            <strong>camiones, tractos y transporte pesado.</strong>
+          </p>
+          <div class="datos">
+            <div><b>5</b><span>áreas de servicio</span></div>
+            <div><b>24h</b><span>respuesta por WhatsApp</span></div>
+            <div><b>1</b><span>equipo responsable</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: SERVICIOS -->
+      <section id="servicios" class="seccion ancho">
+        <div class="encabezado-seccion">
+          <div>
+            <p class="etiqueta"><i></i> SERVICIOS / 01—04</p>
+            <h2>Soluciones para<br /><em>trabajo pesado.</em></h2>
+          </div>
+          <p class="nota">
+            Revisamos primero, explicamos el problema y te damos un precio de
+            referencia antes de iniciar el trabajo.
+          </p>
+        </div>
+        <div class="lista-servicios">
+          <article class="servicio">
+            <div class="foto-servicio">
+              <img
+                src="imagenes/camion_motor.jpg"
+                alt="Reparación de motor de camión"
+              /><span>01</span>
+            </div>
+            <div class="cuerpo-servicio">
+              <h3><i class="fa-solid fa-gears"></i> Reparaciones</h3>
+              <p>
+                Reparamos los componentes que mantienen al camión trabajando en
+                ruta.
+              </p>
+              <button
+                type="button"
+                onclick="mostrar(this)"
+                aria-expanded="false"
+                aria-controls="detalle-servicio-01"
+              >
+                Ver servicios ↓
+              </button>
+              <div class="detalle-opciones" id="detalle-servicio-01">
+                <div class="detalle-opcion">
+                  <b>Motor y componentes</b
+                  ><span
+                    >Revisión y reparación de motor, compresora y bomba de
+                    agua.</span
+                  ><strong>Desde Bs 350</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Caja y dirección</b
+                  ><span
+                    >Atención a caja de cambios, caja de dirección y
+                    corona.</span
+                  ><strong>Desde Bs 350</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Bomba hidráulica</b
+                  ><span
+                    >Diagnóstico del sistema hidráulico y reemplazo de
+                    componentes.</span
+                  ><strong>Desde Bs 280</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="servicio">
+            <div class="foto-servicio">
+              <img
+                src="imagenes/camion_caja.jpg"
+                alt="Cambio de piezas de camión"
+              /><span>02</span>
+            </div>
+            <div class="cuerpo-servicio">
+              <h3><i class="fa-solid fa-arrows-rotate"></i> Cambios</h3>
+              <p>
+                Reemplazo de piezas de desgaste para evitar paradas inesperadas
+                del camión.
+              </p>
+              <button
+                type="button"
+                onclick="mostrar(this)"
+                aria-expanded="false"
+                aria-controls="detalle-servicio-02"
+              >
+                Ver servicios ↓
+              </button>
+              <div class="detalle-opciones" id="detalle-servicio-02">
+                <div class="detalle-opcion">
+                  <b>Aceite y bujes</b
+                  ><span
+                    >Cambio de aceite, buje y revisión de puntos de
+                    desgaste.</span
+                  ><strong>Desde Bs 80</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Crucetas</b
+                  ><span
+                    >Reemplazo y ajuste de cruceta y rodamiento central.</span
+                  ><strong>Desde Bs 120</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Pulmones</b
+                  ><span
+                    >Cambio de pulmón y verificación de su funcionamiento.</span
+                  ><strong>Desde Bs 150</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="servicio">
+            <div class="foto-servicio">
+              <img
+                src="imagenes/camion_frenos.jpg"
+                alt="Mantenimiento de frenos de camión"
+              /><span>03</span>
+            </div>
+            <div class="cuerpo-servicio">
+              <h3>
+                <i class="fa-solid fa-screwdriver-wrench"></i> Mantenimientos
+              </h3>
+              <p>
+                Mantenimiento preventivo para mejorar la seguridad y la vida
+                útil de las piezas.
+              </p>
+              <button
+                type="button"
+                onclick="mostrar(this)"
+                aria-expanded="false"
+                aria-controls="detalle-servicio-03"
+              >
+                Ver servicios ↓
+              </button>
+              <div class="detalle-opciones" id="detalle-servicio-03">
+                <div class="detalle-opcion">
+                  <b>Mantenimiento de rueda</b
+                  ><span
+                    >Limpieza, inspección y ajuste del conjunto de rueda.</span
+                  ><strong>Desde Bs 120</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Mantenimiento de buje</b
+                  ><span>Revisión del buje de eje y sus componentes.</span
+                  ><strong>Desde Bs 150</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Revisión preventiva</b
+                  ><span
+                    >Inspección general para anticipar fallas y paradas.</span
+                  ><strong>Consultar</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="servicio">
+            <div class="foto-servicio">
+              <img
+                src="imagenes/camion_hero.jpg"
+                alt="Sistema de aire y frenos de camión"
+              /><span>04</span>
+            </div>
+            <div class="cuerpo-servicio">
+              <h3><i class="fa-solid fa-truck"></i> Sistemas</h3>
+              <p>
+                Atención especializada a frenos, aire, bloqueador y componentes
+                de camiones.
+              </p>
+              <button
+                type="button"
+                onclick="mostrar(this)"
+                aria-expanded="false"
+                aria-controls="detalle-servicio-04"
+              >
+                Ver servicios ↓
+              </button>
+              <div class="detalle-opciones" id="detalle-servicio-04">
+                <div class="detalle-opcion">
+                  <b>Sistema de aire</b
+                  ><span
+                    >Diagnóstico de pedal, válvula y compartidor de aire.</span
+                  ><strong>Desde Bs 150</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Frenos y tambores</b
+                  ><span
+                    >Revisión del conjunto de freno, tambores y
+                    regulación.</span
+                  ><strong>Desde Bs 180</strong>
+                </div>
+                <div class="detalle-opcion">
+                  <b>Bloqueador y balatas</b
+                  ><span>Inspección del bloqueador y cambio de balatas.</span
+                  ><strong>Desde Bs 180</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: PRODUCTOS -->
+      <section id="productos" class="productos">
+        <div class="ancho">
+          <div class="encabezado-seccion claro-seccion">
+            <div>
+              <p class="etiqueta clara"><i></i> PRODUCTOS / 05</p>
+              <h2>También<br /><em>vendemos.</em></h2>
+            </div>
+            <p class="nota claro">
+              Productos básicos para el mantenimiento de tu camión, disponibles
+              bajo consulta.
+            </p>
+          </div>
+          <div class="productos-grid">
+            <article class="producto">
+              <img
+                src="imagenes/producto_liquido_hidraulico.jpg"
+                alt="Envase de líquido hidráulico"
+              />
+              <div class="producto-contenido">
+                <b>Líquido hidráulico</b>
+                <p>
+                  Fluido para conservar el rendimiento y la respuesta del
+                  sistema hidráulico.
+                </p>
+                <strong>Desde Bs 35</strong
+                ><button
+                  type="button"
+                  onclick="mostrar(this)"
+                  aria-expanded="false"
+                  aria-controls="detalle-producto-01"
+                >
+                  Ver opciones ↓
+                </button>
+                <div class="opciones-producto" id="detalle-producto-01">
+                  <span>Presentaciones según disponibilidad.</span
+                  ><strong>Solicitar cotización</strong>
+                </div>
+              </div>
+            </article>
+            <article class="producto">
+              <img
+                src="imagenes/producto_liquido_frenos.jpg"
+                alt="Envase de líquido de frenos"
+              />
+              <div class="producto-contenido">
+                <b>Líquido de frenos</b>
+                <p>
+                  Para el mantenimiento del sistema de frenado y una respuesta
+                  segura.
+                </p>
+                <strong>Desde Bs 35</strong
+                ><button
+                  type="button"
+                  onclick="mostrar(this)"
+                  aria-expanded="false"
+                  aria-controls="detalle-producto-02"
+                >
+                  Ver opciones ↓
+                </button>
+                <div class="opciones-producto" id="detalle-producto-02">
+                  <span>Consulta la presentación compatible con tu camión.</span
+                  ><strong>Solicitar cotización</strong>
+                </div>
+              </div>
+            </article>
+            <article class="producto">
+              <img
+                src="imagenes/producto_silicon.jpg"
+                alt="Tubo de silicón para mantenimiento"
+              />
+              <div class="producto-contenido">
+                <b>Silicón</b>
+                <p>
+                  Sellado y protección para juntas y reparaciones de
+                  mantenimiento.
+                </p>
+                <strong>Desde Bs 25</strong
+                ><button
+                  type="button"
+                  onclick="mostrar(this)"
+                  aria-expanded="false"
+                  aria-controls="detalle-producto-03"
+                >
+                  Ver opciones ↓
+                </button>
+                <div class="opciones-producto" id="detalle-producto-03">
+                  <span>Disponible para trabajos de sellado y reparación.</span
+                  ><strong>Solicitar cotización</strong>
+                </div>
+              </div>
+            </article>
+            <article class="producto">
+              <img
+                src="imagenes/producto_aceite_vistony.jpg"
+                alt="Envase de aceite para motor"
+              />
+              <div class="producto-contenido">
+                <b>Aceite Vistony</b>
+                <p>
+                  Lubricación confiable para ayudar a proteger el motor y la
+                  transmisión.
+                </p>
+                <strong>Desde Bs 75</strong
+                ><button
+                  type="button"
+                  onclick="mostrar(this)"
+                  aria-expanded="false"
+                  aria-controls="detalle-producto-04"
+                >
+                  Ver opciones ↓
+                </button>
+                <div class="opciones-producto" id="detalle-producto-04">
+                  <span>Viscosidad y presentación según el modelo.</span
+                  ><strong>Solicitar cotización</strong>
+                </div>
+              </div>
+            </article>
+            <article class="producto">
+              <img
+                src="imagenes/producto_balatas.jpg"
+                alt="Balatas para camión"
+              />
+              <div class="producto-contenido">
+                <b>Balatas</b>
+                <p>
+                  Repuestos para el sistema de frenos de camiones de trabajo
+                  pesado.
+                </p>
+                <strong>Desde Bs 180</strong
+                ><button
+                  type="button"
+                  onclick="mostrar(this)"
+                  aria-expanded="false"
+                  aria-controls="detalle-producto-05"
+                >
+                  Ver opciones ↓
+                </button>
+                <div class="opciones-producto" id="detalle-producto-05">
+                  <span>Compatibilidad sujeta a marca y modelo.</span
+                  ><strong>Solicitar cotización</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 6: TRABAJADORES -->
+      <section id="trabajadores" class="seccion ancho">
+        <div class="encabezado-seccion">
+          <div>
+            <p class="etiqueta"><i></i> EQUIPO / 06</p>
+            <h2>Quiénes están<br /><em>en el taller.</em></h2>
+          </div>
+          <p class="nota">
+            El dueño puede marcar la disponibilidad. Los turnos están separados
+            para evitar choques de horario.
+          </p>
+        </div>
+        <div class="trabajadores">
+          <article data-nombre="Jose Armando">
+            <div class="avatar">JA</div>
+            <div>
+              <h3>Jose Armando</h3>
+              <span class="turno">08:00 — 11:00</span>
+              <p class="estado disponible">Disponible</p>
+            </div>
+            <button type="button" class="cambiar-estado" onclick="cambiarEstado(this)">
+              Cambiar
+            </button>
+          </article>
+          <article data-nombre="Jorge">
+            <div class="avatar">JO</div>
+            <div>
+              <h3>Jorge</h3>
+              <span class="turno">11:00 — 14:00</span>
+              <p class="estado disponible">Disponible</p>
+            </div>
+            <button type="button" class="cambiar-estado" onclick="cambiarEstado(this)">
+              Cambiar
+            </button>
+          </article>
+          <article data-nombre="Chapaco">
+            <div class="avatar">CH</div>
+            <div>
+              <h3>Chapaco</h3>
+              <span class="turno">14:00 — 17:00</span>
+              <p class="estado no-disponible">No disponible</p>
+            </div>
+            <button type="button" class="cambiar-estado" onclick="cambiarEstado(this)">
+              Cambiar
+            </button>
+          </article>
+          <article data-nombre="David">
+            <div class="avatar">DA</div>
+            <div>
+              <h3>David</h3>
+              <span class="turno">17:00 — 20:00</span>
+              <p class="estado disponible">Disponible</p>
+            </div>
+            <button type="button" class="cambiar-estado" onclick="cambiarEstado(this)">
+              Cambiar
+            </button>
+          </article>
+          <article class="dueno" data-nombre="Rene">
+            <div class="avatar">RE</div>
+            <div>
+              <h3>Rene <small>(dueño)</small></h3>
+              <span class="turno">08:00 — 20:00 / coordinación</span>
+              <p class="estado disponible">Disponible</p>
+            </div>
+            <button type="button" class="cambiar-estado" onclick="cambiarEstado(this)">
+              Cambiar
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 7: CONTACTO Y RESERVA -->
+      <section id="contacto" class="contacto">
+        <div class="ancho contacto-grid">
+          <div>
+            <p class="etiqueta clara"><i></i> SOLICITUD / 07</p>
+            <h2>Cuéntanos qué<br /><em>necesita tu camión.</em></h2>
+            <p>
+              Envíanos los datos del camión y el servicio que buscas. Te
+              contactaremos para confirmar disponibilidad y precio final.
+            </p>
+            <div class="whatsapp">
+              <i class="fab fa-whatsapp"></i
+              ><span><b>WhatsApp</b><br />+591 75707099</span>
+            </div>
+          </div>
+          <div class="formulario">
+            <div class="form-cabecera">
+              <span>FICHA DE SERVICIO PESADO</span><b>FU—2026</b>
+            </div>
+            <form
+              action="procesar_formulario.php"
+              method="POST"
+              onsubmit="prepararSolicitud()"
+            >
+              <label
+                >Nombre completo<input
+                  name="nombre"
+                  type="text"
+                  maxlength="100"
+                  required
+                  placeholder="Escribe tu nombre"
+              /></label>
+              <div class="fila">
+                <label
+                  >Celular<input
+                    name="celular"
+                    type="tel"
+                    maxlength="20"
+                    required
+                    placeholder="75707099" /></label
+                ><label
+                  >Camión / modelo<input
+                    name="tipo_vehiculo"
+                    maxlength="100"
+                    required
+                    placeholder="Ej. Volvo FH 440"
+                /></label>
+              </div>
+              <label
+                >Servicio que necesitas<select
+                  name="servicio"
+                  id="servicio-select"
+                  required
+                  onchange="actualizarAdelanto(this)"
+                >
+                  <option value="" data-precio="0">
+                    Selecciona un servicio
+                  </option>
+                  <option value="Mantenimiento del motor" data-precio="350">
+                    Mantenimiento del motor — desde Bs 350
+                  </option>
+                  <option value="Reparación de caja" data-precio="350">
+                    Reparación de caja — desde Bs 350
+                  </option>
+                  <option value="Mantenimiento de frenos" data-precio="180">
+                    Mantenimiento de frenos — desde Bs 180
+                  </option>
+                  <option value="Sistema de aire" data-precio="150">
+                    Sistema de aire — desde Bs 150
+                  </option>
+                  <option value="Cambio de piezas" data-precio="120">
+                    Cambio de piezas — desde Bs 120
+                  </option>
+                  <option value="Compra de productos" data-precio="35">
+                    Compra de productos — desde Bs 35
+                  </option>
+                </select></label
+              >
+              <div class="reserva-panel" id="reserva-panel" hidden>
+                <div class="reserva-cabecera">
+                  <div>
+                    <span class="reserva-etiqueta">ASEGURA TU CITA</span>
+                    <h3>Adelanto para reservar</h3>
+                  </div>
+                  <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <div class="resumen-reserva">
+                  <div>
+                    <span>Precio referencial</span
+                    ><strong id="precio-servicio">Bs 0</strong>
+                  </div>
+                  <div class="adelanto-destacado">
+                    <span>Adelanto 25%</span
+                    ><strong id="monto-adelanto">Bs 0</strong>
+                  </div>
+                  <div>
+                    <span>Saldo restante</span
+                    ><strong id="saldo-servicio">Bs 0</strong>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  name="precio_referencial"
+                  id="precio-referencial"
+                  value="0"
+                /><input
+                  type="hidden"
+                  name="adelanto_25"
+                  id="adelanto-25"
+                  value="0"
+                />
+                <div class="qr-reserva">
+                  <div class="qr-placeholder">
+                    <img
+                      class="qr-imagen"
+                      src="imagenes/qr_pago.jpg"
+                      alt="Código QR de pago BancoSol"
+                    />
+                  </div>
+                  <div class="comprobante-aviso">
+                    <p>
+                      Después de pagar, envía la foto de tu comprobante por
+                      WhatsApp junto con tu nombre. Ejemplo: “Aquí está mi
+                      comprobante, mi nombre es Juan Pérez”.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <label
+                >Detalles<textarea
+                  name="descripcion"
+                  rows="3"
+                  required
+                  placeholder="Describe la falla o el trabajo que necesitas"
+                ></textarea></label
+              ><div class="acciones-formulario">
+                <button class="boton oscuro" type="submit">
+                  <span id="texto-boton-reserva">Solicitar cita</span>
+                  <i class="fa-solid fa-calendar-check"></i>
+                </button>
+                <a
+                  class="boton whatsapp-reserva"
+                  href="https://wa.me/59175707099"
+                  target="_blank"
+                  rel="noopener"
+                  onclick="abrirWhatsAppComprobante(event)"
+                  ><i class="fab fa-whatsapp"></i> WhatsApp comprobante</a
+                >
+              </div
+              ><small
+                >El monto mostrado es referencial. La cita queda pendiente de
+                confirmación hasta validar el adelanto.</small
+              >
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- SECCIÓN 8: UBICACIÓN -->
+      <section id="ubicacion" class="seccion ancho ubicacion">
+        <div class="ubicacion-card">
+          <div>
+            <p class="etiqueta"><i></i> VISÍTANOS / 08</p>
+            <h2>Listos para<br /><em>tu camión.</em></h2>
+            <div class="dato-ubicacion">
+              <i class="fa-solid fa-location-dot"></i
+              ><span
+                ><b>5Q92+2GG</b><br />Santa Cruz de la Sierra, Bolivia</span
+              >
+            </div>
+            <div class="dato-ubicacion">
+              <i class="fa-regular fa-clock"></i
+              ><span><b>Lunes a sábado</b><br />08:00 — 18:00</span>
+            </div>
+            <a
+              class="boton principal"
+              href="https://maps.app.goo.gl/5EFCKaH6MYVAhhHP9"
+              target="_blank"
+              rel="noopener"
+              >Abrir en Maps <i class="fa-solid fa-location-arrow"></i
+            ></a>
+          </div>
+          <div class="mapa">
+            <img
+              src="imagenes/ubicacion.jpg"
+              alt="Mapa de ubicación de Mecánica FrenosUriona"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- SECCIÓN 9: PIE DE PÁGINA -->
+    <footer class="pie">
+      <div class="ancho pie-grid">
+        <div>
+          <a href="#inicio" class="marca"
+            ><span class="marca-simbolo"><i class="fa-solid fa-truck"></i></span
+            ><span class="marca-nombre"
+              >FrenosUriona<small>MECÁNICA PESADA</small></span
+            ></a
+          >
+          <p>Reparación y mantenimiento para camiones.</p>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <p>
+            WhatsApp<br />
+            <a href="https://wa.me/59175707099" target="_blank" rel="noopener"
+              >+591 75707099</a
+            >
+          </p>
+        </div>
+        <div>
+          <h3>Trabajadores</h3>
+          <p>Jose Armando<br />Jorge · Chapaco · David<br />Rene (dueño)</p>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 Mecánica FrenosUriona. Proyecto académico.
+      </div>
+    </footer>
+    <!-- SECCIÓN 10: JAVASCRIPT -->
+    <script>
+      // Acordeones de servicios y productos
+      function mostrar(boton) {
+        const tarjeta = boton.closest(".servicio, .producto");
+        const abierto = tarjeta.classList.toggle("abierto");
+        const esProducto = tarjeta.classList.contains("producto");
+
+        boton.setAttribute("aria-expanded", String(abierto));
+        boton.textContent = abierto
+          ? esProducto
+            ? "Ocultar opciones ↑"
+            : "Cerrar opciones ↑"
+          : esProducto
+            ? "Ver opciones ↓"
+            : "Ver servicios ↓";
+      }
+
+      // Cambiar disponibilidad de los trabajadores
+      function cambiarEstado(boton) {
+        const estado = boton.parentElement.querySelector(".estado");
+        const disponible = estado.classList.contains("disponible");
+
+        estado.classList.toggle("disponible", !disponible);
+        estado.classList.toggle("no-disponible", disponible);
+        estado.textContent = disponible ? "No disponible" : "Disponible";
+      }
+
+      // Mostrar los precios en bolivianos
+      function formatoBs(valor) {
+        return (
+          "Bs " +
+          valor.toLocaleString("es-BO", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })
+        );
+      }
+
+      // Calcular el adelanto del 25%
+      function actualizarAdelanto(select) {
+        const opcion = select.options[select.selectedIndex];
+        const precio = Number(opcion.dataset.precio || 0);
+        const adelanto = Math.round(precio * 0.25 * 100) / 100;
+        const saldo = Math.round((precio - adelanto) * 100) / 100;
+        const panel = document.getElementById("reserva-panel");
+
+        panel.hidden = precio <= 0;
+        document.getElementById("precio-servicio").textContent =
+          formatoBs(precio);
+        document.getElementById("monto-adelanto").textContent =
+          formatoBs(adelanto);
+        document.getElementById("saldo-servicio").textContent =
+          formatoBs(saldo);
+        document.getElementById("precio-referencial").value = precio.toFixed(2);
+        document.getElementById("adelanto-25").value = adelanto.toFixed(2);
+        document.getElementById("texto-boton-reserva").textContent =
+          precio > 0 ? "Solicitar cita y reservar" : "Solicitar cita";
+      }
+
+      // Preparar los datos antes de enviar el formulario
+      function prepararSolicitud() {
+        const select = document.getElementById("servicio-select");
+
+        if (!select.value) {
+          return;
+        }
+
+        const opcion = select.options[select.selectedIndex];
+        const precio = Number(opcion.dataset.precio || 0);
+        const adelanto = Math.round(precio * 0.25 * 100) / 100;
+        const detalle = document.querySelector('textarea[name="descripcion"]');
+        const resumen =
+          "Precio referencial: " +
+          formatoBs(precio) +
+          " | Adelanto 25%: " +
+          formatoBs(adelanto);
+
+        if (!detalle.value.includes("Adelanto 25%:")) {
+          detalle.value = detalle.value.trim() + "\n\n" + resumen;
+        }
+      }
+
+      // Abrir WhatsApp con el nombre escrito en el formulario
+      function abrirWhatsAppComprobante(event) {
+        event.preventDefault();
+        const nombre = document
+          .querySelector('input[name="nombre"]')
+          .value.trim();
+        const mensaje = nombre
+          ? "Aquí está mi comprobante, mi nombre es " + nombre
+          : "Aquí está mi comprobante, mi nombre es ";
+        window.open(
+          "https://wa.me/59175707099?text=" + encodeURIComponent(mensaje),
+          "_blank",
+          "noopener"
+        );
+      }
+    </script>
+  </body>
+</html>
